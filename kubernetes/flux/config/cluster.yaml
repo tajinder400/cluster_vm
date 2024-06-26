@@ -6,9 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 30m
-  url: "ssh://git@github.com:tajinder400/cluster_vm.git"
-  secretRef:
-    name: github-deploy-key
+  url: "https://github.com/tajinder400/cluster_vm.git"
   ref:
     branch: "main"
   ignore: |
