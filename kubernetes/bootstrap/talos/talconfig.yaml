@@ -22,38 +22,53 @@ cniConfig:
 
 nodes:
   - hostname: "k3s-node01"
-    ipAddress: ""
+    ipAddress: "10.0.10.92"
     installDisk: "/dev/vda"
     talosImageURL: factory.talos.dev/installer/e9c7ef96884d4fbc8c0a1304ccca4bb0287d766a8b4125997cb9dbe84262144e
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
           hardwareAddr: "52:54:00:e4:31:ee"
-        dhcp: true
+        dhcp: false
+        addresses:
+          - "10.0.10.92/24"
+        routes:
+          - network: 0.0.0.0/0
+            gateway: "10.0.10.1"
         mtu: 1500
         vip:
           ip: "10.0.10.150"
   - hostname: "k3s-node02"
-    ipAddress: ""
+    ipAddress: "10.0.10.93"
     installDisk: "/dev/vda"
     talosImageURL: factory.talos.dev/installer/e9c7ef96884d4fbc8c0a1304ccca4bb0287d766a8b4125997cb9dbe84262144e
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
           hardwareAddr: "52:54:00:93:c4:37"
-        dhcp: true
+        dhcp: false
+        addresses:
+          - "10.0.10.93/24"
+        routes:
+          - network: 0.0.0.0/0
+            gateway: "10.0.10.1"
         mtu: 1500
         vip:
           ip: "10.0.10.150"
   - hostname: "k3s-node03"
-    ipAddress: ""
+    ipAddress: "10.0.10.94"
     installDisk: "/dev/vda"
     talosImageURL: factory.talos.dev/installer/e9c7ef96884d4fbc8c0a1304ccca4bb0287d766a8b4125997cb9dbe84262144e
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
           hardwareAddr: "52:54:00:62:70:d3"
-        dhcp: true
+        dhcp: false
+        addresses:
+          - "10.0.10.94/24"
+        routes:
+          - network: 0.0.0.0/0
+            gateway: "10.0.10.1"
         mtu: 1500
         vip:
           ip: "10.0.10.150"
