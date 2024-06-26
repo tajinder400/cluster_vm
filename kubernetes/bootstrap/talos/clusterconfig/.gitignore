@@ -1,0 +1,4 @@
+home-kubernetes-k3s-node01.yaml
+home-kubernetes-k3s-node02.yaml
+home-kubernetes-k3s-node03.yaml
+talosconfig
