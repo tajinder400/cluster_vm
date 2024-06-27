@@ -16,3 +16,5 @@ resources:
   - ./ingress-nginx.yaml
   - ./k8s-gateway.yaml
   - ./longhorn.yaml
+  - ./backcube.yaml
+  - ./piraeus.yaml
