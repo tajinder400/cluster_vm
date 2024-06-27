@@ -24,7 +24,7 @@ nodes:
   - hostname: "k3s-node01"
     ipAddress: "10.0.10.98"
     installDisk: "/dev/vda"
-    talosImageURL: factory.talos.dev/installer/e9c7ef96884d4fbc8c0a1304ccca4bb0287d766a8b4125997cb9dbe84262144e
+    talosImageURL: factory.talos.dev/installer/75b3cc1a585dbce01346dae5eae9d612aeb5df2c3d48a814e3df0fb5bec03ada
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
@@ -41,7 +41,7 @@ nodes:
   - hostname: "k3s-node02"
     ipAddress: "10.0.10.99"
     installDisk: "/dev/vda"
-    talosImageURL: factory.talos.dev/installer/e9c7ef96884d4fbc8c0a1304ccca4bb0287d766a8b4125997cb9dbe84262144e
+    talosImageURL: factory.talos.dev/installer/75b3cc1a585dbce01346dae5eae9d612aeb5df2c3d48a814e3df0fb5bec03ada
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
@@ -58,7 +58,7 @@ nodes:
   - hostname: "k3s-node03"
     ipAddress: "10.0.10.100"
     installDisk: "/dev/vda"
-    talosImageURL: factory.talos.dev/installer/e9c7ef96884d4fbc8c0a1304ccca4bb0287d766a8b4125997cb9dbe84262144e
+    talosImageURL: factory.talos.dev/installer/75b3cc1a585dbce01346dae5eae9d612aeb5df2c3d48a814e3df0fb5bec03ada
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
