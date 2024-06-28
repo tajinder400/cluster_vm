@@ -43,9 +43,9 @@ spec:
               RADARR__AUTH__METHOD: External
               RADARR__AUTH__REQUIRED: DisabledForLocalAddresses
               RADARR__APP__THEME: dark
-            #envFrom:
-            #  - secretRef:
-            #      name: sonarr
+            envFrom:
+              - secretRef:
+                  name: radarr
             securityContext:
               allowPrivilegeEscalation: false
               readOnlyRootFilesystem: true
