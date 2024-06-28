@@ -107,4 +107,4 @@ spec:
         server: 10.0.10.33
         path: /export/download
         globalMounts:
-          - path: /usenet
+          - path: /downloads
