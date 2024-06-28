@@ -43,6 +43,7 @@ spec:
               RADARR__AUTH__METHOD: External
               RADARR__AUTH__REQUIRED: DisabledForLocalAddresses
               RADARR__APP__THEME: dark
+              TZ: Europe/London
             envFrom:
               - secretRef:
                   name: radarr
