@@ -40,9 +40,9 @@ spec:
               repository: ghcr.io/onedr0p/sonarr-develop
               tag: 4.0.5.1782@sha256:e52156ce17abc4e05e26536b72f2a39257461f06182a9696af317d025f0d7bc7
             env:
-              SONARR_AUTH_METHOD: External
-              SONARR_AUTH_REQUIRED: DisabledForLocalAddresses
-              SONARR_APP_THEME: dark
+              SONARR__AUTH__METHOD: External
+              SONARR__AUTH__REQUIRED: DisabledForLocalAddresses
+              SONARR__APP__THEME: dark
             envFrom:
               - secretRef:
                   name: sonarr
