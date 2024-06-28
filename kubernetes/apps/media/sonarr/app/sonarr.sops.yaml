@@ -3,7 +3,7 @@ kind: Secret
 metadata:
     name: sonarr
 stringData:
-    'SONARR__API_KEY:': ENC[AES256_GCM,data:3Ci0EytFsNdpvc1y6CrTcc3bCXW2jQxiwfLzwnUvpII=,iv:gIUy2PNN4b2KGh8/eTAofh22qFCEcBdEuapW2nO5Ie0=,tag:8StbG1iBz3+Icbo3FllQ/Q==,type:str]
+    'SONARR_API_KEY:': ENC[AES256_GCM,data:lEgYCMTWCCvxToMwfxj0y8zdKmTt6cQWB+n33EVh12E=,iv:sBYs/ISenT4QU9v0YB7Z8gtwt9ianj4rLitmnnNw/6M=,tag:aUgp7iDW5AdCA/c0nb6rrQ==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -19,8 +19,8 @@ sops:
             a3B0d0huQVJOb1JnWVlhbUY3dGFEVVEKsIHNVBwmDSM7McG1eJ7pr42gJEf7raEV
             uFEBo4QdNgLc/0+Ke5rNOcRcHHdiefJu82UedS+HESBGWbU2MXnxdA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2024-06-28T16:14:55Z"
-    mac: ENC[AES256_GCM,data:GrFlSXvkhg/DDI07iLs5uR6WhgGeF3TOb9hLQ/OSsyomDKewLYoaA+4ED93wGSYkdiiV4Jae/TaVxN2vPFG/Zu1yFcLhkk/2nktgfvGZEAhtWCS1v/naZD/LWvNV7BS7VHNX8I575wGZgpjGPND5OgBTtpap4telNOUX8MXaKhw=,iv:+77HhL+ZVy/PjYCDF9fWqSCSOi1GEEoN+oPtSAaZoAs=,tag:3aS+xkTGX+28vklN2qdpXw==,type:str]
+    lastmodified: "2024-06-28T17:11:13Z"
+    mac: ENC[AES256_GCM,data:9lNFel41visl6nITffhrE7HlAxVbRSupCiTSD0Ex+6RhblGRJjjXIjXScyDcGN4dWyqMOvugeAf0IHWYhFMFbLcU9vp+ujhf5T1zlTTjOoXZkOZjgTpb/mEdR+UtghgSCgqd4n5zKRGWnkHcYjXCHF7bRYKK5ssWDZ7EuCV78KA=,iv:rMF2hqGavNX07EBvkoyuuEqoZymSr3DRxqKOtxvWs0A=,tag:H7jqTWSpa+FKZQtmxtdxQg==,type:str]
     pgp: []
     encrypted_regex: ^(data|stringData)$
     version: 3.8.1
