@@ -39,7 +39,7 @@ nodes:
         vip:
           ip: "10.0.10.150"
   - hostname: "k3s-node02"
-    ipAddress: "10.0.10.99"
+    ipAddress: "10.0.10.116"
     installDisk: "/dev/vda"
     talosImageURL: factory.talos.dev/installer/75b3cc1a585dbce01346dae5eae9d612aeb5df2c3d48a814e3df0fb5bec03ada
     controlPlane: true
@@ -48,7 +48,7 @@ nodes:
           hardwareAddr: "52:54:00:15:bc:8b"
         dhcp: false
         addresses:
-          - "10.0.10.99/24"
+          - "10.0.10.116/24"
         routes:
           - network: 0.0.0.0/0
             gateway: "10.0.10.1"
