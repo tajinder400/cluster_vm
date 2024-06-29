@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Secret
+metadata:
+    name: vaultwarden
+stringData:
+    ADMIN_TOKEN: ENC[AES256_GCM,data:UJV6tRv3xm430R2RtRswtTmne6UOTOPkiRpRjmtITxkdjLUpVJ21EMvje7D66nqD,iv:JzIdm41w+daRw1/41AFaH2oA1FkfGaJ5xKG9M+TFgtU=,tag:2Y29TdrgWJNopbRNzfkW2Q==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1clq05mzytspfnjga3rwgajltyemkd4h5cdfnxx07y5h6w3zcuczstupc6a
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBFeU1Vai9CMnptMHVYRVln
+            RTNJTldsWjVGN2JFdXF3NlVsK21TVEgwK1RZCitLN0czYzFySFNwVGxsUDlWdUVN
+            M2pjdGNtNUd3OTQ2K0drVWVURXhWTm8KLS0tIEtnOU9oNXlQUy9ONEx1N2F0dnpN
+            MEFuOWN1dWNXVkQwR3c5US9MdEtzWEkK1qOXupBG8F8f5HXhBGIYcmEKMN/ogMAd
+            HnOoxkmKHbZhFjRgGC7jWYXfnyKlXNB/zsLbUmQr3iHeU9ZeHt6FYw==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2024-06-29T14:18:13Z"
+    mac: ENC[AES256_GCM,data:WqNu1axTYcjjHfhiChfyM9Ttp4TcXM6qGebTLnDzN4bWgWSnDIdOOIqLZoHCc9ZUQfqYJ4duZV7fXxuO9FeRYJPYYpXsUHG3ItcpUIA37tpx7gYWQW7bFQVBkS9rm+FyLK4SlGfnsumkMpheiyrhPJMyFShnQLi6IiDSdK2ZHoQ=,iv:07RbualsBuQ7UBqHWVLS676knw+h2iUh/agtQhwFJms=,tag:l8e1rMYUlOBPNJjsG0+Vqg==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.8.1
