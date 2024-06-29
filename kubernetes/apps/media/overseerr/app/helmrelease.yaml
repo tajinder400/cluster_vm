@@ -41,6 +41,7 @@ spec:
               tag: 1.33.2@sha256:714ea6db2bc007a2262d112bef7eec74972eb33d9c72bddb9cbd98b8742de950
             env:
               TZ: Europe/London
+              PORT: &port 5055
             securityContext:
               allowPrivilegeEscalation: false
               readOnlyRootFilesystem: true
@@ -52,7 +53,7 @@ spec:
                 spec:
                   httpGet:
                     path: /api/v1/status
-                    port: &port 5055
+                    port: *port
                   initialDelaySeconds: 0
                   periodSeconds: 10
                   timeoutSeconds: 1
