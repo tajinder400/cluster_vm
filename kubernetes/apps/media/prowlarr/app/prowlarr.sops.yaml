@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Secret
+metadata:
+    name: prowlarr
+stringData:
+    PROWLARR__API_KEY: ENC[AES256_GCM,data:T/yNYtdTCckLQrseKQIc4+d+t9yynZDDd7l4M3VOUHk=,iv:qONZGSoqe52OGFTcQMGGqJ57b3FruTL3RERevSNDlwY=,tag:Q/LVc+HnhyEuWlh9MWU6Tw==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1clq05mzytspfnjga3rwgajltyemkd4h5cdfnxx07y5h6w3zcuczstupc6a
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHRUdOM1ZYTnl4Rm1Qc3Mw
+            M014d293VG1qbUdZeEY3WERhRy84WDQrSFFzClNqTjIzRFpsL1lQVUx0UmprWFZv
+            OFBuNDFoNWpWZkJWWXh3SEtGcWlDQ0kKLS0tIDlBOVVsZHZNRDJxSE5oNTYzTUQ4
+            L2dZSkVxdHRYNHh2SWRrU1ZxM2ZtN2sKdgAMDU5Ez7q5KXMmgtSNY0hLCLcnujZq
+            MwVWaM2IgUrssHaa3+IWQFvoJp/dPyQ4WECjH2T9uePUkyBieW8qeg==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2024-06-28T21:08:36Z"
+    mac: ENC[AES256_GCM,data:A1N0krkR9IiCKNICB8rEv50FW8Nb1XYUUuSzzryJJjYgT9noMmdECnCRP7paNCwZMUl8QiyX3MK5811mFB6NHyal5FiU3IDglG9KEDE5t7NGQtDkgMNUMopxPw1jip/M5x3X+ALN746qynxNTVB9FTvO+hz+0NITOEN3TqKiFas=,iv:/zfZIRr/zg4hXu/q3sVe0bk+kHqG+wrRyGq7rkwH9Bk=,tag:3dHhuZAn3P/tAU/R6hHjTg==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.8.1
