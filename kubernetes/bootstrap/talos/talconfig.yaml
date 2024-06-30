@@ -6,13 +6,13 @@ talosVersion: v1.7.5
 kubernetesVersion: v1.30.2
 
 clusterName: "home-kubernetes"
-endpoint: https://10.0.10.150:6443
+endpoint: https://10.0.10.251:6443
 clusterPodNets:
   - "10.69.0.0/16"
 clusterSvcNets:
   - "10.96.0.0/16"
 additionalApiServerCertSans: &sans
-  - "10.0.10.150"
+  - "10.0.10.251"
   - 127.0.0.1 # KubePrism
 additionalMachineCertSans: *sans
 
@@ -37,7 +37,7 @@ nodes:
             gateway: "10.0.10.1"
         mtu: 1500
         vip:
-          ip: "10.0.10.150"
+          ip: "10.0.10.251"
   - hostname: "k3s-node02"
     ipAddress: "10.0.10.116"
     installDisk: "/dev/vda"
@@ -54,7 +54,7 @@ nodes:
             gateway: "10.0.10.1"
         mtu: 1500
         vip:
-          ip: "10.0.10.150"
+          ip: "10.0.10.251"
   - hostname: "k3s-node03"
     ipAddress: "10.0.10.100"
     installDisk: "/dev/vda"
@@ -71,7 +71,7 @@ nodes:
             gateway: "10.0.10.1"
         mtu: 1500
         vip:
-          ip: "10.0.10.150"
+          ip: "10.0.10.251"
 
 # Global patches
 patches:
