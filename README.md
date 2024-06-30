@@ -376,16 +376,3 @@ task talos:upgrade-k8s controller=? to=?
 
 - Make a post in this repository's Github [Discussions](https://github.com/onedr0p/cluster-template/discussions).
 - Start a thread in the `#support` or `#cluster-template` channels in the [Home Operations](https://discord.gg/home-operations) Discord server.
-
-## ❔ What's next
-
-The cluster is your oyster (or something like that). Below are some optional considerations you might want to review.
-
-### Ship it
-
-To browse or get ideas on applications people are running, community member [@whazor](https://github.com/whazor) created [Kubesearch](https://kubesearch.dev) as a creative way to search Flux HelmReleases across Github and Gitlab.
-
-### Storage
-
-The included CSI (openebs in local-hostpath mode) is a great start for storage but soon you might find you need more features like replicated block storage, or to connect to a NFS/SMB/iSCSI server. If you need any of those features be sure to check out the projects like [rook-ceph](https://github.com/rook/rook), [longhorn](https://github.com/longhorn/longhorn), [openebs](https://github.com/openebs/openebs), [democratic-csi](https://github.com/democratic-csi/democratic-csi), [csi-driver-nfs](https://github.com/kubernetes-csi/csi-driver-nfs),
-and [synology-csi](https://github.com/SynologyOpenSource/synology-csi).
