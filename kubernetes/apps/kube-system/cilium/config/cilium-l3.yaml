@@ -10,7 +10,6 @@ spec:
       kubernetes.io/os: linux
   virtualRouters:
     - localASN: 64512
-      exportPodCIDR: true
       neighbors:
         - peerAddress: "10.0.10.1/32"
           peerASN: 64512
@@ -25,4 +24,4 @@ metadata:
 spec:
   allowFirstLastIPs: "Yes"
   blocks:
-    - cidr: "172.198.1.0/24"
+    - cidr: "10.1.0.1/16"
